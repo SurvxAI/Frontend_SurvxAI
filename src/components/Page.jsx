@@ -108,10 +108,7 @@ const TwitterClone = () => {
                 <span className="font-bold">Foot Mercato</span>
                 <span className="text-gray-500 ml-2">@footmercato · 1h</span>
               </div>
-              <div className="mt-2">
-                🚨 OFFICIEL : ERIK TEN HAG EST LICENCIE PAR MANCHESTER UNITED !
-                ❌
-              </div>
+              <div className="mt-2">It's just a deployment test</div>
               <div className="text-gray-500">(Communiqué du club)</div>
             </div>
           </div>
