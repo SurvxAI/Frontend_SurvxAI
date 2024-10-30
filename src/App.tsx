@@ -1,10 +1,10 @@
 import "./styles/globals.css";
-import TwitterClone from "./components/Page";
+import LandingPage from "./components/Page";
 
 function App() {
   return (
     <>
-      <TwitterClone />
+      <LandingPage />
     </>
   );
 }

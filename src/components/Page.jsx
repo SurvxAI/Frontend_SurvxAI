@@ -1,173 +1,114 @@
 import React from "react";
-import {
-  Home,
-  Search,
-  Bell,
-  Mail,
-  Bookmark,
-  Users,
-  User,
-  MoreHorizontal,
-  Image,
-  Film,
-  ListOrdered,
-  Smile,
-  MapPin,
-} from "lucide-react";
+import { ArrowRight, Star, Users, Shield, HeartHandshake } from "lucide-react";
 
-const TwitterClone = () => {
+const LandingPage = () => {
   return (
-    <div className="min-h-screen bg-black text-white flex">
-      {/* Left Sidebar */}
-      <div className="w-64 p-4 border-r border-gray-800">
-        <div className="space-y-4">
-          <div className="p-2">
-            <svg className="w-8 h-8 text-white" viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-              />
-            </svg>
-          </div>
+    <div className="min-h-screen bg-black text-white">
+      {/* Navigation */}
+      <nav className="flex justify-between items-center p-4 border-b border-gray-800">
+        <div className="text-2xl font-bold">Surv</div>
+        <div className="space-x-6">
+          <button className="text-gray-300 hover:text-white">About</button>
+          <button className="text-gray-300 hover:text-white">Features</button>
+          <button className="text-gray-300 hover:text-white">Contact</button>
+          <button className="bg-blue-500 px-4 py-2 rounded-full hover:bg-blue-600">
+            Get Started
+          </button>
+        </div>
+      </nav>
 
-          <NavItem icon={<Home />} text="Home" />
-          <NavItem icon={<Search />} text="Explore" />
-          <NavItem icon={<Bell />} text="Notifications" />
-          <NavItem icon={<Mail />} text="Messages" />
-          <NavItem icon={<Bookmark />} text="Grok" />
-          <NavItem icon={<Users />} text="Communities" />
-          <NavItem
-            icon={
-              <svg className="w-6 h-6" viewBox="0 0 24 24">
-                <path
-                  fill="currentColor"
-                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                />
-              </svg>
-            }
-            text="Premium"
-          />
-          <NavItem icon={<User />} text="Profile" />
-          <NavItem icon={<MoreHorizontal />} text="More" />
-
-          <button className="w-full bg-blue-500 text-white rounded-full py-3 font-bold">
-            Post
+      {/* Hero Section */}
+      <div className="flex flex-col items-center justify-center text-center py-20 px-4">
+        <h1 className="text-6xl font-bold mb-6">
+          Experience Next-Gen Surveillance
+        </h1>
+        <p className="text-xl text-gray-400 mb-8 max-w-2xl">
+          Advanced AI-powered security monitoring system for businesses and
+          organizations. Real-time alerts, smart detection, and comprehensive
+          analytics.
+        </p>
+        <div className="flex gap-4">
+          <button className="bg-blue-500 px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-600 flex items-center gap-2">
+            Start Free Trial <ArrowRight size={20} />
+          </button>
+          <button className="border border-gray-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-900">
+            Watch Demo
           </button>
         </div>
       </div>
 
-      {/* Main Content */}
-      <div className="flex-1 border-r border-gray-800">
-        <div className="flex border-b border-gray-800">
-          <div className="flex-1 p-4 font-bold">For you</div>
-          <div className="flex-1 p-4 text-gray-500">Following</div>
+      {/* Features Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8 py-16">
+        <div className="p-6 border border-gray-800 rounded-xl hover:border-blue-500 transition-colors">
+          <Star className="w-12 h-12 text-blue-500 mb-4" />
+          <h3 className="text-xl font-semibold mb-2">AI-Powered Detection</h3>
+          <p className="text-gray-400">
+            Advanced algorithms for accurate threat detection and behavior
+            analysis.
+          </p>
         </div>
-
-        {/* Post composer */}
-        <div className="p-4 border-b border-gray-800">
-          <div className="flex">
-            <div className="w-12 h-12 rounded-full bg-gray-800" />
-            <div className="flex-1 ml-4">
-              <input
-                type="text"
-                placeholder="What is happening?!"
-                className="w-full bg-transparent text-xl outline-none"
-              />
-              <div className="flex items-center mt-4 gap-4">
-                <button className="text-blue-500">
-                  <Image className="w-5 h-5" />
-                </button>
-                <button className="text-blue-500">
-                  <Film className="w-5 h-5" />
-                </button>
-                <button className="text-blue-500">
-                  <ListOrdered className="w-5 h-5" />
-                </button>
-                <button className="text-blue-500">
-                  <Smile className="w-5 h-5" />
-                </button>
-                <button className="text-blue-500">
-                  <MapPin className="w-5 h-5" />
-                </button>
-                <div className="ml-auto">
-                  <button className="bg-blue-500 px-4 py-1.5 rounded-full font-bold">
-                    Post
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="p-6 border border-gray-800 rounded-xl hover:border-blue-500 transition-colors">
+          <Users className="w-12 h-12 text-blue-500 mb-4" />
+          <h3 className="text-xl font-semibold mb-2">Multi-Site Management</h3>
+          <p className="text-gray-400">
+            Monitor and manage multiple locations from a single dashboard.
+          </p>
         </div>
-
-        {/* Sample post */}
-        <div className="p-4 border-b border-gray-800">
-          <div className="flex">
-            <div className="w-12 h-12 rounded-full bg-gray-800" />
-            <div className="ml-4">
-              <div className="flex items-center">
-                <span className="font-bold">Foot Mercato</span>
-                <span className="text-gray-500 ml-2">@footmercato · 1h</span>
-              </div>
-              <div className="mt-2">It's just a deployment test</div>
-              <div className="text-gray-500">(Communiqué du club)</div>
-            </div>
-          </div>
+        <div className="p-6 border border-gray-800 rounded-xl hover:border-blue-500 transition-colors">
+          <Shield className="w-12 h-12 text-blue-500 mb-4" />
+          <h3 className="text-xl font-semibold mb-2">Enhanced Security</h3>
+          <p className="text-gray-400">
+            Enterprise-grade security with end-to-end encryption.
+          </p>
         </div>
       </div>
 
-      {/* Right Sidebar */}
-      <div className="w-80 p-4">
-        <div className="bg-gray-900 rounded-lg p-4 mb-4">
-          <h2 className="text-xl font-bold mb-2">Ending today!</h2>
-          <p className="mb-4">Get up to 50% off X Premium</p>
-          <button className="bg-white text-black rounded-full px-4 py-2 font-bold">
-            Subscribe
-          </button>
-        </div>
-
-        <div className="bg-gray-900 rounded-lg p-4">
-          <h2 className="text-xl font-bold mb-4">Trends for you</h2>
-          <TrendingItem topic="Sports" title="Real Madrid" posts="174K" />
-          <TrendingItem
-            topic="Trending in Senegal"
-            title="WhatsApp"
-            posts="137K"
-          />
-          <TrendingItem
-            topic="Trending in Senegal"
-            title="Supprime"
-            posts="6,469"
-          />
-          <TrendingItem
-            topic="Trending in Senegal"
-            title="Pleure"
-            posts="13.4K"
-          />
-          <TrendingItem
-            topic="Trending in Senegal"
-            title="Wesh"
-            posts="5,996"
-          />
+      {/* Testimonial Section */}
+      <div className="bg-gray-900 py-16 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <HeartHandshake className="w-16 h-16 text-blue-500 mx-auto mb-6" />
+          <p className="text-2xl font-medium italic mb-6">
+            "Surv has transformed how we manage our security operations. The
+            AI-powered features have significantly reduced false alarms and
+            improved our response time."
+          </p>
+          <p className="text-gray-400">
+            - John Smith, Security Director at TechCorp
+          </p>
         </div>
       </div>
+
+      {/* CTA Section */}
+      <div className="text-center py-20 px-4">
+        <h2 className="text-4xl font-bold mb-6">Ready to get started?</h2>
+        <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+          Join thousands of organizations that trust Surv for their surveillance
+          needs.
+        </p>
+        <button className="bg-blue-500 px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-600">
+          Start Your Free Trial
+        </button>
+      </div>
+
+      {/* Footer */}
+      <footer className="border-t border-gray-800 py-8 px-4">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+          <div className="text-2xl font-bold mb-4 md:mb-0">Surv</div>
+          <div className="flex space-x-6 text-gray-400">
+            <a href="#" className="hover:text-white">
+              Privacy
+            </a>
+            <a href="#" className="hover:text-white">
+              Terms
+            </a>
+            <a href="#" className="hover:text-white">
+              Contact
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
 
-// Helper Components
-const NavItem = ({ icon, text }) => (
-  <div className="flex items-center p-3 hover:bg-gray-900 rounded-full cursor-pointer">
-    <div className="w-6 h-6">{icon}</div>
-    <span className="ml-4 text-xl">{text}</span>
-  </div>
-);
-
-const TrendingItem = ({ topic, title, posts }) => (
-  <div className="py-2 hover:bg-gray-800 cursor-pointer">
-    <div className="text-gray-500 text-sm">{topic}</div>
-    <div className="font-bold">{title}</div>
-    <div className="text-gray-500 text-sm">{posts} posts</div>
-  </div>
-);
-
-export default TwitterClone;
+export default LandingPage;
