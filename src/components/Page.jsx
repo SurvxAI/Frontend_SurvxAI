@@ -23,8 +23,7 @@ const LandingPage = () => {
           Experience Next-Gen Surveillance
         </h1>
         <p className="text-xl text-gray-400 mb-8 max-w-2xl">
-          Advanced AI-powered security monitoring system for businesses and
-          organizations. Real-time alerts, smart detection, and comprehensive
+          Leveraging AI to Streamline Consumer & Business Services for Optimal Efficiency. Real-time alerts, smart detection, and comprehensive
           analytics.
         </p>
         <div className="flex gap-4">
