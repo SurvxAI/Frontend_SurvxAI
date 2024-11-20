@@ -49,7 +49,7 @@ const Navigation = () => {
           ))}
           <Link
             to="/get-started"
-            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition-colors duration-300"
+            className="bg-[#6B48FF] hover:bg-blue-600 text-white px-2 py-1 rounded-md transition-colors duration-300"
           >
             Get Started
           </Link>
@@ -123,7 +123,7 @@ const HeroSection = () => {
                     put you in control.
                   </div>
                   <button
-                    className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded text-sm md:text-base"
+                    className="mt-4 bg-[#6B48FF] hover:bg-blue-600 text-white font-medium py-1 px-4 rounded text-sm md:text-base"
                     onClick={() => setIsExpanded(!isExpanded)}
                   >
                     {isExpanded ? "Read less" : "Read more"}
@@ -172,7 +172,7 @@ const HeroSection = () => {
 
               {/* CTA Button */}
               <div className="mt-8 md:mt-10">
-                <button className="w-full sm:w-auto rounded-lg bg-[#6B48FF] px-4 md:px-6 py-2 md:py-3 text-base md:text-lg font-semibold text-white hover:bg-[#7559FF] transition-colors duration-300">
+                <button className="w-full sm:w-auto rounded-lg  bg-[#6B48FF] px-4 md:px-6 py-1 md:py-2 text-base md:text-lg font-semibold text-white hover:bg-[#7559FF] transition-colors duration-300">
                   Start Your Journey
                 </button>
               </div>
@@ -211,7 +211,7 @@ const HeroSection = () => {
                         />
                       </div>
 
-                      <button className="w-full bg-[#6B48FF] py-2 md:py-3 rounded-lg text-white hover:bg-[#7559FF] transition-colors duration-300 flex items-center justify-center space-x-2 text-sm md:text-base">
+                      <button className="w-full bg-[#6B48FF] py-2 md:py-2 rounded-lg text-white hover:bg-[#7559FF] transition-colors duration-300 flex items-center justify-center space-x-2 text-sm md:text-base">
                         <LogIn className="w-4 md:w-5 h-4 md:h-5" />
                         <span>Sign In</span>
                       </button>
@@ -304,7 +304,7 @@ const LandingPage = () => {
           Join thousands of satisfied users who have simplified their daily
           tasks with our AI-powered solutions.
         </p>
-        <button className="w-full sm:w-auto bg-[#6B48FF] px-6 md:px-8 py-2 md:py-3 rounded-full text-base md:text-lg font-semibold text-white hover:bg-[#7559FF] transition-colors duration-300">
+        <button className="w-full sm:w-auto bg-[#6B48FF] px-6 md:px-8 py-1 md:py-2 rounded-full text-base md:text-lg font-semibold text-white hover:bg-[#7559FF] transition-colors duration-300">
           Start Free Trial
         </button>
       </div>
